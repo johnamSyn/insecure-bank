@@ -207,7 +207,7 @@ public class DashboardController {
 			fos.close();
 
 			// Use MD5 algorithm
-			MessageDigest md5Digest = MessageDigest.getInstance("MD5");
+			MessageDigest md5Digest = MessageDigest.getInstance("SHA-256");
 
 			// Get the checksum
 			checksum = getFileChecksum(md5Digest, tmpFile);
